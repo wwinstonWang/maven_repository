@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>ssm-base</artifactId>
+        <groupId>com.winston.ssm</groupId>
+        <version>2.0</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.winston.query</groupId>
+    <artifactId>query-service</artifactId>
+
+    <dependencies>
+        <!-- mybatis查询插件 -->
+        <dependency>
+            <groupId>com.winston.query</groupId>
+            <artifactId>query</artifactId>
+        </dependency>
+
+    </dependencies>
+</project>
