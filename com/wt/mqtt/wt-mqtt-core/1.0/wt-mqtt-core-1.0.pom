@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>wt-mqtt</artifactId>
+        <groupId>com.wt.mqtt</groupId>
+        <version>1.0</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.wt.mqtt</groupId>
+    <artifactId>wt-mqtt-core</artifactId>
+
+    <properties>
+        <ssm-core.version>2.0</ssm-core.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.winston.ssm</groupId>
+            <artifactId>ssm-standard</artifactId>
+            <version>${ssm-core.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.springframework.integration/spring-integration-mqtt -->
+        <dependency>
+            <groupId>org.springframework.integration</groupId>
+            <artifactId>spring-integration-mqtt</artifactId>
+            <version>5.3.0.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>com.wt.mqtt</groupId>
+            <artifactId>wt-mqtt-re</artifactId>
+        </dependency>
+
+    </dependencies>
+
+    <repositories>
+        <repository>
+            <id>winston</id>
+            <name>winston github</name>
+            <url>https://raw.githubusercontent.com/wwinstonWang/maven_repository/master</url>
+        </repository>
+    </repositories>
+</project>
