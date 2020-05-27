@@ -14,7 +14,7 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.winston.standard</groupId>
+            <groupId>com.winston.ssm</groupId>
             <artifactId>ssm-standard</artifactId>
         </dependency>
         <!--分页插件-->

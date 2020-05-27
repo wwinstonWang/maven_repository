@@ -19,8 +19,12 @@
     <dependencies>
         <dependency>
             <groupId>com.winston.ssm</groupId>
-            <artifactId>ssm-standard</artifactId>
+            <artifactId>ssm-tools</artifactId>
             <version>${ssm-core.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
@@ -35,16 +39,9 @@
         </dependency>
         <dependency>
             <groupId>com.wt.mqtt</groupId>
-            <artifactId>wt-mqtt-re</artifactId>
+            <artifactId>wt-mqtt-msg</artifactId>
         </dependency>
 
     </dependencies>
 
-    <repositories>
-        <repository>
-            <id>winston</id>
-            <name>winston github</name>
-            <url>https://raw.githubusercontent.com/wwinstonWang/maven_repository/master</url>
-        </repository>
-    </repositories>
 </project>

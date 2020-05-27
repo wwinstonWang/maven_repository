@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <metadata>
-  <groupId>com.winston.standard</groupId>
+  <groupId>com.winston.ssm</groupId>
   <artifactId>ssm-standard</artifactId>
   <versioning>
     <release>2.0</release>

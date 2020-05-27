@@ -14,9 +14,9 @@
     <packaging>pom</packaging>
     <version>1.0</version>
     <modules>
-        <module>wt-mqtt-re</module>
+        <module>wt-mqtt-msg</module>
         <module>wt-mqtt-core</module>
-        <module>demo</module>
+<!--        <module>demo</module>-->
     </modules>
 
     <properties>
@@ -27,7 +27,7 @@
         <dependencies>
             <dependency>
                 <groupId>com.wt.mqtt</groupId>
-                <artifactId>wt-mqtt-re</artifactId>
+                <artifactId>wt-mqtt-msg</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
@@ -53,7 +53,7 @@
         <repository>
             <id>local</id>
             <name>thinkpad</name>
-            <url>file://E:/local-deploy</url>
+            <url>file:/home/data/git.me/maven_repository</url>
         </repository>
     </distributionManagement>
 </project>
