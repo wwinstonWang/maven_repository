@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.1.3.RELEASE</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+    <groupId>com.wt.mqtt</groupId>
+    <artifactId>wt-mqtt</artifactId>
+    <packaging>pom</packaging>
+    <version>1.1</version>
+    <modules>
+        <module>wt-mqtt-msg</module>
+        <module>wt-mqtt-core</module>
+<!--        <module>demo</module>-->
+    </modules>
+
+    <properties>
+        <json-path.version>2.4.0</json-path.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.wt.mqtt</groupId>
+                <artifactId>wt-mqtt-msg</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.wt.mqtt</groupId>
+                <artifactId>wt-mqtt-core</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <!-- https://mvnrepository.com/artifact/com.jayway.jsonpath/json-path -->
+            <dependency>
+                <groupId>com.jayway.jsonpath</groupId>
+                <artifactId>json-path</artifactId>
+                <version>${json-path.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <distributionManagement>
+        <!--        <repository>-->
+        <!--            <id>github</id>-->
+        <!--            <name>GitHub OWNER Apache Maven Packages</name>-->
+        <!--            <url>https://maven.pkg.github.com/wwinstonWang/ssm-base</url>-->
+        <!--        </repository>-->
+        <repository>
+            <id>local</id>
+            <name>thinkpad</name>
+            <url>file:/home/data/git.me/maven_repository</url>
+        </repository>
+    </distributionManagement>
+</project>
