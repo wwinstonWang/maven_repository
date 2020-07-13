@@ -132,7 +132,7 @@
         <repository>
             <id>local</id>
             <name>thinkpad</name>
-            <url>file:/home/data/git.me/maven_repository</url>
+            <url>file://E:/local-deploy</url>
         </repository>
     </distributionManagement>
 
