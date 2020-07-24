@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Wed May 27 09:44:39 CST 2020
+https\://wwinstonwang.github.io/maven_repository/.error=
+http\://maven.aliyun.com/nexus/content/groups/public/.error=
+https\://wwinstonwang.github.io/maven_repository/.lastUpdated=1590543879123
+http\://maven.aliyun.com/nexus/content/groups/public/.lastUpdated=1590543879380

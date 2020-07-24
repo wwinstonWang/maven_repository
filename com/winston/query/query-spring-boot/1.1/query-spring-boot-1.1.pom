@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.winston.query</groupId>
+    <artifactId>query-spring-boot</artifactId>
+    <packaging>pom</packaging>
+    <version>1.1</version>
+    <modules>
+        <module>query-spring-boot-starter</module>
+        <module>query-spring-boot-autoconfigure</module>
+        <module>query-spring-boot-sample</module>
+    </modules>
+
+    <properties>
+        <query.version>1.1</query.version>
+        <spring-boot.version>2.1.1.RELEASE</spring-boot.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <dependencyManagement>
+       <dependencies>
+           <!-- https://mvnrepository.com/artifact/com.github.pagehelper/pagehelper-spring-boot-starter -->
+           <dependency>
+               <groupId>com.github.pagehelper</groupId>
+               <artifactId>pagehelper-spring-boot-starter</artifactId>
+               <version>1.2.10</version>
+           </dependency>
+
+           <dependency>
+               <groupId>com.winston.query</groupId>
+               <artifactId>query</artifactId>
+               <version>${query.version}</version>
+           </dependency>
+           <!--sprint boot依赖-->
+           <dependency>
+               <groupId>org.springframework.boot</groupId>
+               <artifactId>spring-boot-dependencies</artifactId>
+               <version>${spring-boot.version}</version>
+               <type>pom</type>
+               <scope>import</scope>
+           </dependency>
+       </dependencies>
+    </dependencyManagement>
+</project>
