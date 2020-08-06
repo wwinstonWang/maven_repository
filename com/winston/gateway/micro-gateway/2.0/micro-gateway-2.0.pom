@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>com.winston</groupId>
-		<artifactId>ssm-micro</artifactId>
+		<artifactId>ssm-micro-parent</artifactId>
 		<version>2.0</version>
 	</parent>
 	<groupId>com.winston.gateway</groupId>
