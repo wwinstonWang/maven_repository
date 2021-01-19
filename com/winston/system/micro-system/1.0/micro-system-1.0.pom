@@ -4,19 +4,58 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>com.winston</groupId>
-		<artifactId>ssm-micro</artifactId>
-		<version>1.0</version>
+		<artifactId>ssm-micro-parent</artifactId>
+		<version>2.1</version>
 	</parent>
 	<groupId>com.winston.system</groupId>
 	<artifactId>micro-system</artifactId>
+	<version>1.0</version>
 	<name>micro-system</name>
 	<description>微服务子项目系统管理</description>
 
+	<properties>
+		<mysql.version>8.0.22</mysql.version>
+	</properties>
+
     <dependencies>
+		<dependency>
+			<groupId>org.mybatis</groupId>
+			<artifactId>mybatis</artifactId>
+			<version>3.5.6</version>
+		</dependency>
         <dependency>
             <groupId>com.winston.ssm</groupId>
-            <artifactId>ssm-core</artifactId>
+            <artifactId>ssm-core-plus</artifactId>
+			<exclusions>
+				<exclusion>
+					<groupId>org.mybatis</groupId>
+					<artifactId>mybatis</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>${mysql.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger-ui</artifactId>
+			<version>2.9.2</version>
+		</dependency>
+		<dependency>
+			<groupId>com.github.xiaoymin</groupId>
+			<artifactId>swagger-bootstrap-ui</artifactId>
+			<version>1.8.7</version>
 		</dependency>
     </dependencies>
+
+	<repositories>
+		<repository>
+			<id>ssm</id>
+			<url>https://wwinstonwang.github.io/maven_repository/</url>
+		</repository>
+	</repositories>
 
 </project>
