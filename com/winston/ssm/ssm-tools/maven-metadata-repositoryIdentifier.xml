@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.winston.ssm</groupId>
+  <artifactId>ssm-tools</artifactId>
+  <versioning>
+    <release>unknown</release>
+    <versions>
+      <version>2.1</version>
+      <version>2.0</version>
+      <version>unknown</version>
+    </versions>
+    <lastUpdated>20210625030139</lastUpdated>
+  </versioning>
+</metadata>

@@ -44,6 +44,13 @@
 
     </dependencies>
 
+    <repositories>
+        <repository>
+            <id>ssm</id>
+            <url>https://wwinstonwang.github.io/maven_repository</url>
+            <!--<url>https://mupiaoliu.gitee.io/maven_repository</url>-->
+        </repository>
+    </repositories>
     <build>
         <plugins>
             <plugin>
